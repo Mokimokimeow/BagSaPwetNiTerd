@@ -9,6 +9,7 @@
         const isDark = localStorage.getItem('darkMode') === 'enabled';
         if (isDark) {
           document.documentElement.classList.add('dark-mode');
+          document.documentElement.classList.add('dark');
         }
       })();
     </script>
@@ -16,7 +17,11 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <script src="javascript/sweetalert2.all.min.js"></script>
     <script src="javascript/vue.global.js"></script>
+    <link rel="stylesheet" href="css/plus-jakarta-sans.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
   </head>
   <body class="bg-gray-100 min-h-screen overflow-x-hidden">
     <!-- Welcome Page Navigation -->
@@ -257,7 +262,7 @@
                 class="slide absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 transform scale-105 pointer-events-none"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                  src="img/hero.png"
                   alt="Students"
                   class="w-full h-full object-cover pointer-events-none"
                 />
@@ -320,7 +325,7 @@
                 class="slide absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 transform scale-105 pointer-events-none"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                  src="img/campus.jpg"
                   alt="News"
                   class="w-full h-full object-cover pointer-events-none"
                 />

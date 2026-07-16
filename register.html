@@ -10,6 +10,7 @@
       const isDark = localStorage.getItem('darkMode') === 'enabled';
       if (isDark) {
         document.documentElement.classList.add('dark-mode');
+        document.documentElement.classList.add('dark');
       }
     })();
   </script>
@@ -17,7 +18,11 @@
   <link rel="stylesheet" href="css/all.min.css" />
   <script src="javascript/sweetalert2.all.min.js"></script>
   <script src="javascript/vue.global.js"></script>
+  <link rel="stylesheet" href="css/plus-jakarta-sans.css" />
   <link rel="stylesheet" href="css/styles.css?v=4" />
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
 </head>
 
 <body class="bg-gray-100 min-h-screen overflow-x-hidden pt-24">

@@ -519,7 +519,9 @@ try {
     exit();
 }
 
-$action = $_GET['action'] ?? '';
+if (empty($action)) {
+    $action = $_GET['action'] ?? '';
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($action === 'register') {

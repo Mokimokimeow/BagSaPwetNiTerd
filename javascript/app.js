@@ -3789,6 +3789,7 @@ function switchTab(tabName) {
 function applyDarkMode(isDark) {
     if (isDark) {
         document.documentElement.classList.add('dark-mode');
+        document.documentElement.classList.add('dark');
         if (document.body) {
             document.body.style.backgroundColor = '#1a1a2e';
             document.body.style.color = '#ffffff';
@@ -3801,6 +3802,7 @@ function applyDarkMode(isDark) {
         }
     } else {
         document.documentElement.classList.remove('dark-mode');
+        document.documentElement.classList.remove('dark');
         if (document.body) {
             document.body.style.backgroundColor = '#f3f4f6';
             document.body.style.color = '#1f2937';

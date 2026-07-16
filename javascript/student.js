@@ -674,6 +674,7 @@ function applyDarkMode(isDark) {
     const icon = document.getElementById('darkModeIcon');
     if (isDark) {
         document.documentElement.classList.add('dark-mode');
+        document.documentElement.classList.add('dark');
         if (document.body) {
             document.body.style.backgroundColor = '#1a1a2e';
             document.body.style.color = '#ffffff';
@@ -685,6 +686,7 @@ function applyDarkMode(isDark) {
         }
     } else {
         document.documentElement.classList.remove('dark-mode');
+        document.documentElement.classList.remove('dark');
         if (document.body) {
             document.body.style.backgroundColor = '#f5f8fb';
             document.body.style.color = '#2c3e50';
